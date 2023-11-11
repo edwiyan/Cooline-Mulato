@@ -1,0 +1,27 @@
+/* Light mode styles */
+.container {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode .container {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Additional dark mode styles for rows and columns */
+.dark-mode .row {
+    background-color: #333333;
+}
+
+.dark-mode .col {
+    background-color: #222222;
+    border: 1px solid #444444;
+    color: #ffffff;
+}
+
+/* Custom dark mode styles for specific elements if needed */
+.dark-mode h1 {
+    color: #ffcc00;
+}

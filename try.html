@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Add your custom CSS for dark and light mode here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="theme-container">
+        <div class="row">
+            <div class="col">
+                <h1>Hello, World!</h1>
+            </div>
+        </div>
+    </div>
+
+    <button id="toggle-theme">Toggle Theme</button>
+
+    <script>
+        // Function to toggle between dark and light themes
+        function toggleTheme() {
+            const container = document.getElementById('theme-container');
+            const body = document.body;
+
+            container.classList.toggle('dark-mode');
+            body.classList.toggle('dark-mode');
+        }
+
+        // Add an event listener to the toggle button
+        const toggleButton = document.getElementById('toggle-theme');
+        toggleButton.addEventListener('click', toggleTheme);
+    </script>
+</body>
+</html>
